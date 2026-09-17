@@ -1,3 +1,34 @@
+## Исправленный промпт для доработки предоставленного приложения
+
+I need to fix the existing random lunch menu recommender in `week1/index.html`
+and prepare it for GitHub Pages. Work directly with the provided HTML/CSS/JavaScript;
+do not create a new application or redesign it.
+
+Keep the current layout, colors, all 12 lunch options, the “Generate Lunch!” button,
+the `Math.floor(Math.random() * lunchMenu.length)` selection, the 500 ms “Thinking...”
+state, the fade-in animation, and random generation on page load. The final display
+must contain the selected lunch name and its corresponding icon.
+
+Fix the missing icons: the original uses Font Awesome Free 6.4.0, but `fa-bowl-hot`,
+`fa-pasta`, and `fa-bowl` are absent from that version's free CSS. Use only class names
+verified in the actual stylesheet. Replace Ramen's icon with `fas fa-bowl-food`,
+Pasta's with `fas fa-utensils`, and Soup's with `fas fa-bowl-rice`. These are symbolic
+food icons; do not invent icon names or claim they are dish photographs.
+
+Bundle the official Font Awesome Free 6.4.0 core CSS, solid CSS, and solid webfonts
+inside `week1/assets/fontawesome/`, retaining the upstream license. Use relative
+paths so that the same files work locally and under a GitHub Pages repository path.
+Do not fetch icons, stylesheets, or fonts from third-party servers at runtime.
+
+Verify all 12 choices, that each icon has a non-empty CSS `::before` content and
+the bundled font loads, repeated real button clicks, and correct name/icon pairs.
+Document the reproduced bug, minimal code changes, tests, and GitHub Pages setup.
+Preserve the original prompt below so the change can be reviewed.
+
+---
+
+## Исходный промпт и ответ (сохранены без изменений)
+
 ## Q: I need to code random lunch menu recsys then publish this into github page. Let's first write the description readme.
 
 Of course! This is a great project. A well-written README is crucial for any GitHub repository.

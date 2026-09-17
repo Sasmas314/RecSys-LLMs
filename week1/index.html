@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Lunch Menu Generator</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Keep Font Awesome Free 6.4.0 local so icons do not depend on a CDN. -->
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/solid.min.css">
     <style>
         * {
             margin: 0;
@@ -152,19 +154,19 @@
             const foodName = document.querySelector('.food-name');
             const lunchDisplay = document.querySelector('.lunch-display');
             
-            // Array of lunch options with corresponding Font Awesome icons
+            // Use only icons verified in the bundled Font Awesome Free 6.4.0 CSS.
             const lunchMenu = [
                 { name: "Pizza", icon: "fas fa-pizza-slice" },
                 { name: "Sushi", icon: "fas fa-fish" },
                 { name: "Burger", icon: "fas fa-hamburger" },
                 { name: "Salad", icon: "fas fa-leaf" },
                 { name: "Tacos", icon: "fas fa-utensil-spoon" },
-                { name: "Ramen", icon: "fas fa-bowl-hot" },
+                { name: "Ramen", icon: "fas fa-bowl-food" },
                 { name: "Sandwich", icon: "fas fa-bread-slice" },
-                { name: "Pasta", icon: "fas fa-pasta" },
+                { name: "Pasta", icon: "fas fa-utensils" },
                 { name: "Curry", icon: "fas fa-mortar-pestle" },
                 { name: "Steak", icon: "fas fa-drumstick-bite" },
-                { name: "Soup", icon: "fas fa-bowl" },
+                { name: "Soup", icon: "fas fa-bowl-rice" },
                 { name: "BBQ", icon: "fas fa-fire" }
             ];
             
